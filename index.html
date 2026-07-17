@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgenticOS @ NeurIPS 2026: Co-designing Systems and ML Foundations of an OS Layer for Agentic AI</title>
+  <meta name="description" content="AgenticOS: A NeurIPS 2026 workshop on co-designing the systems and machine-learning foundations of an operating-system layer for agentic AI. Sydney, December 12, 2026." />
+  <meta name="author" content="AgenticOS Workshop Organizers" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AgenticOS @ NeurIPS 2026" />
+  <meta property="og:description" content="Co-designing Systems and ML Foundations of an OS Layer for Agentic AI. NeurIPS 2026, Sydney, December 12, 2026." />
+  <meta property="og:url" content="https://agentic-fmos.github.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__logo">AgenticOS</span>
+        <span class="nav__badge">NeurIPS 2026</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#dates">Dates</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#committee">Committee</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow">NeurIPS 2026 Workshop &middot; Sydney, Australia</p>
+      <h1 class="hero__title">AgenticOS</h1>
+      <p class="hero__subtitle">Co-designing Systems and ML Foundations of an OS Layer for Agentic AI</p>
+      <p class="hero__lede">
+        Workshop to bring the machine&nbsp;learning and systems communities together
+        to define the abstractions, memory hierarchies, scheduling policies, and execution
+        substrates required to make agentic AI reliable, sharable, scalable, and evolvable.
+      </p>
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Date</span>
+          <span class="hero__meta-value">December 12, 2026</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Venue</span>
+          <span class="hero__meta-value">NeurIPS 2026, Sydney</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Submissions</span>
+          <span class="hero__meta-value">via OpenReview</span>
+        </div>
+      </div>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#cfp">Call for Papers</a>
+        <a class="btn btn--ghost" href="#dates">Important Dates</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__kicker">Overview</p>
+        <h2 class="section__title">Why an OS layer for agentic AI?</h2>
+        <div class="prose">
+          <p>
+            Agentic AI systems increasingly persist state, plan over long horizons, coordinate
+            multiple models and tools, and even self-evolve. Yet today each capability is rebuilt
+            from scratch inside framework-specific silos. The field needs a
+            <strong>new OS-like layer that provides common abstractions</strong>
+            for memory, scheduling, routing, governance, and reproducibility.
+          </p>
+          <p>
+            Recognition of this requirement has led to a proliferation of promising but largely
+            independent efforts, each tackling a different piece of the agentic systems challenge.
+            Designing the needed OS layer requires <strong>genuine co-design across the ML and
+            systems communities</strong>. The ML community must ask how models should be trained,
+            structured, and exposed as system components, not merely as API endpoints. The systems
+            community must ask what abstractions, memory hierarchies, scheduling policies, and
+            execution substrates are required to make agentic behavior reliable and governable.
+            These questions are fundamentally coupled: the right abstractions depend on model
+            capabilities, and model capabilities depend on system support.
+          </p>
+        </div>
+
+        <div class="cards cards--3">
+          <div class="card card--soft">
+            <h3 class="card__title">Scaling beyond pilots</h3>
+            <p>Enterprise agentic systems are scaling beyond pilots but lack robust governance and
+               reproducibility, risking fragmented framework-specific conventions.</p>
+          </div>
+          <div class="card card--soft">
+            <h3 class="card__title">Protocols at critical mass</h3>
+            <p>Standardization (MCP, A2A) has reached critical mass, enabling definition of
+               system-layer abstractions before defaults solidify.</p>
+          </div>
+          <div class="card card--soft">
+            <h3 class="card__title">A fragmented field</h3>
+            <p>Relevant research is fragmented across ML, systems, and applications, motivating a
+               dedicated venue to unify vocabulary, benchmarks, and collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TOPICS ===================== -->
+    <section class="section section--alt" id="topics">
+      <div class="container">
+        <p class="section__kicker">Scope</p>
+        <h2 class="section__title">Topics &amp; research questions</h2>
+        <p class="section__intro">
+          This workshop focuses on the fundamental research questions at the intersection of ML and
+          systems that must be answered to make agentic AI reliable, sharable, scalable, and
+          evolvable. We invite contributions on topics including:
+        </p>
+        <ol class="topics">
+          <li><span class="topics__num">01</span><span>Should foundation models be trained differently to serve as system components?</span></li>
+          <li><span class="topics__num">02</span><span>What are the minimal abstractions for building agentic systems?</span></li>
+          <li><span class="topics__num">03</span><span>Agentic memory: representations, policies, and cross-layer optimization.</span></li>
+          <li><span class="topics__num">04</span><span>Cross-layer optimization for agentic workloads.</span></li>
+          <li><span class="topics__num">05</span><span>Model routing and composition under uncertainty.</span></li>
+          <li><span class="topics__num">06</span><span>Designing long-horizon agentic systems.</span></li>
+          <li><span class="topics__num">07</span><span>Constrained self-evolution: safety, reproducibility, and governance.</span></li>
+          <li><span class="topics__num">08</span><span>Evaluation methodology for agentic systems.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CFP ===================== -->
+    <section class="section" id="cfp">
+      <div class="container">
+        <p class="section__kicker">Participate</p>
+        <h2 class="section__title">Call for papers</h2>
+        <div class="prose">
+          <p>
+            We welcome submissions that advance the co-design of ML and systems foundations for an
+            operating-system layer for agentic AI.
+          </p>
+        </div>
+        <div class="callout">
+          <div>
+            <h3 class="callout__title">Submit your work</h3>
+            <p>Submission portal opens ahead of the deadline. Check back for the OpenReview link.</p>
+          </div>
+          <a class="btn btn--primary" href="#dates">See deadlines</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DATES ===================== -->
+    <section class="section section--alt" id="dates">
+      <div class="container">
+        <p class="section__kicker">Timeline</p>
+        <h2 class="section__title">Important dates</h2>
+        <div class="dates">
+          <div class="dates__item">
+            <div class="dates__when">Aug 29, 2026</div>
+            <div class="dates__what">Paper submission deadline (OpenReview)</div>
+          </div>
+          <div class="dates__item">
+            <div class="dates__when">Sep 29, 2026</div>
+            <div class="dates__what">Final notifications</div>
+          </div>
+          <div class="dates__item">
+            <div class="dates__when">TBA</div>
+            <div class="dates__what">Camera-ready paper deadline</div>
+          </div>
+          <div class="dates__item dates__item--highlight">
+            <div class="dates__when">Dec 12, 2026</div>
+            <div class="dates__what">Workshop day, NeurIPS 2026, Sydney</div>
+          </div>
+        </div>
+        <p class="dates__note">All deadlines are anywhere on Earth (AoE) unless stated otherwise. Dates are subject to change.</p>
+      </div>
+    </section>
+
+    <!-- ===================== SPEAKERS ===================== -->
+    <section class="section" id="speakers">
+      <div class="container">
+        <p class="section__kicker">Program</p>
+        <h2 class="section__title">Speakers</h2>
+
+        <h3 class="speakers__group">Keynote Speakers</h3>
+        <div class="speakers speakers--keynote">
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/ion-stoica.jpg" alt="Ion Stoica" loading="lazy" /></div>
+            <h3 class="speaker__name">Ion Stoica</h3>
+            <p class="speaker__affil">UC Berkeley</p>
+          </article>
+        </div>
+
+        <h3 class="speakers__group">Speakers and Panelists</h3>
+        <div class="speakers">
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/yongfeng-zhang.jpg" alt="Yongfeng Zhang" loading="lazy" /></div>
+            <h3 class="speaker__name">Yongfeng Zhang</h3>
+            <p class="speaker__affil">Rutgers University</p>
+          </article>
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/hongru-wang.jpg" alt="Hongru Wang" loading="lazy" /></div>
+            <h3 class="speaker__name">Hongru Wang</h3>
+            <p class="speaker__affil">University of Edinburgh</p>
+          </article>
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/bo-li.jpg" alt="Bo Li" loading="lazy" /></div>
+            <h3 class="speaker__name">Bo Li</h3>
+            <p class="speaker__affil">University of Illinois Urbana-Champaign</p>
+          </article>
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/yogesh-simmhan.jpg" alt="Yogesh Simmhan" loading="lazy" /></div>
+            <h3 class="speaker__name">Yogesh Simmhan</h3>
+            <p class="speaker__affil">IISc Bangalore</p>
+          </article>
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/deshraj-yadav.jpg" alt="Deshraj Yadav" loading="lazy" /></div>
+            <h3 class="speaker__name">Deshraj Yadav</h3>
+            <p class="speaker__affil">Mem0</p>
+          </article>
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/mohamed-wahib.jpg" alt="Mohamed Wahib" loading="lazy" /></div>
+            <h3 class="speaker__name">Mohamed Wahib</h3>
+            <p class="speaker__affil">RIKEN R-CCS</p>
+          </article>
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/manish-gupta.jpg" alt="Manish Gupta" loading="lazy" /></div>
+            <h3 class="speaker__name">Manish Gupta</h3>
+            <p class="speaker__affil">Google DeepMind</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCHEDULE ===================== -->
+    <section class="section section--alt" id="schedule">
+      <div class="container">
+        <p class="section__kicker">December 12, 2026</p>
+        <h2 class="section__title">Schedule</h2>
+        <p class="section__intro">A full-day program organized to maximize discussion and community building.</p>
+        <div class="schedule">
+          <div class="sched"><div class="sched__time">8:55 &ndash; 9:00</div><div class="sched__body"><h3>Opening Remarks</h3></div></div>
+          <div class="sched"><div class="sched__time">9:00 &ndash; 9:40</div><div class="sched__body"><h3>Keynote Talk</h3></div></div>
+          <div class="sched"><div class="sched__time">9:40 &ndash; 10:10</div><div class="sched__body"><h3>Invited Talk</h3></div></div>
+          <div class="sched sched--break"><div class="sched__time">10:10 &ndash; 10:30</div><div class="sched__body"><h3>Tea Break</h3></div></div>
+          <div class="sched"><div class="sched__time">10:30 &ndash; 11:00</div><div class="sched__body"><h3>Spotlight Papers</h3></div></div>
+          <div class="sched"><div class="sched__time">11:00 &ndash; 11:30</div><div class="sched__body"><h3>Invited Talk</h3></div></div>
+          <div class="sched"><div class="sched__time">11:40 &ndash; 12:40</div><div class="sched__body"><h3>Poster Session</h3></div></div>
+          <div class="sched sched--break"><div class="sched__time">12:40 &ndash; 1:45</div><div class="sched__body"><h3>Lunch Break</h3></div></div>
+          <div class="sched"><div class="sched__time">1:45 &ndash; 2:25</div><div class="sched__body"><h3>Keynote Talk</h3></div></div>
+          <div class="sched"><div class="sched__time">2:25 &ndash; 2:55</div><div class="sched__body"><h3>Invited Talk</h3></div></div>
+          <div class="sched sched--feature"><div class="sched__time">3:00 &ndash; 5:00</div><div class="sched__body">
+            <h3>Special Session: Co-designing ML &amp; Systems Foundations of AgenticOS: Current Reality &amp; the Way Forward</h3>
+            <p>Short invited talks followed by a panel discussion. Moderator: Ian Foster.</p>
+          </div></div>
+          <div class="sched"><div class="sched__time">5:00 &ndash; 5:30</div><div class="sched__body"><h3>Closing Remarks &amp; Best Paper Award</h3></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ORGANIZERS ===================== -->
+    <section class="section" id="organizers">
+      <div class="container">
+        <p class="section__kicker">Team</p>
+        <h2 class="section__title">Organizers</h2>
+        <div class="organizers">
+          <article class="org">
+            <div class="org__avatar" data-initials="SB"></div>
+            <div class="org__info">
+              <h3 class="org__name">Suparna Bhattacharya</h3>
+              <p class="org__affil">Hewlett Packard Enterprise (HPE Labs), Bangalore</p>
+              <a class="org__mail" href="mailto:suparna.bhattacharya@hpe.com">suparna.bhattacharya@hpe.com</a>
+            </div>
+          </article>
+          <article class="org">
+            <div class="org__avatar" data-initials="IF"></div>
+            <div class="org__info">
+              <h3 class="org__name">Ian Foster</h3>
+              <p class="org__affil">University of Chicago &amp; Argonne National Laboratory</p>
+              <a class="org__mail" href="mailto:foster@uchicago.edu">foster@uchicago.edu</a>
+            </div>
+          </article>
+          <article class="org">
+            <div class="org__avatar" data-initials="JZ"></div>
+            <div class="org__info">
+              <h3 class="org__name">Jishen Zhao</h3>
+              <p class="org__affil">University of California, San Diego</p>
+              <a class="org__mail" href="mailto:jzhao@ucsd.edu">jzhao@ucsd.edu</a>
+            </div>
+          </article>
+          <article class="org">
+            <div class="org__avatar" data-initials="CW"></div>
+            <div class="org__info">
+              <h3 class="org__name">Cong Wang</h3>
+              <p class="org__affil">Multikernel Technologies</p>
+              <a class="org__mail" href="mailto:cwang@multikernel.io">cwang@multikernel.io</a>
+            </div>
+          </article>
+          <article class="org">
+            <div class="org__avatar" data-initials="TK"></div>
+            <div class="org__info">
+              <h3 class="org__name">Tarun Kumar</h3>
+              <p class="org__affil">Hewlett Packard Enterprise (HPE Labs)</p>
+              <a class="org__mail" href="mailto:tarun.kumar2@hpe.com">tarun.kumar2@hpe.com</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMMITTEE ===================== -->
+    <section class="section section--alt" id="committee">
+      <div class="container">
+        <p class="section__kicker">Reviewers</p>
+        <h2 class="section__title">Program committee</h2>
+        <ul class="pc">
+          <li><span class="pc__name">Abhimanyu Pallavi Sudhir</span><span class="pc__affil">University of Warwick</span></li>
+          <li><span class="pc__name">Anran Li</span><span class="pc__affil">USTC</span></li>
+          <li><span class="pc__name">Cong Xu</span><span class="pc__affil">HPE</span></li>
+          <li><span class="pc__name">Feijie Wu</span><span class="pc__affil">Purdue University</span></li>
+          <li><span class="pc__name">Jiayi Wang</span><span class="pc__affil">Oak Ridge National Laboratory</span></li>
+          <li><span class="pc__name">Lorenzo Sani</span><span class="pc__affil">University of Cambridge</span></li>
+          <li><span class="pc__name">Martin Foltin</span><span class="pc__affil">HPE</span></li>
+          <li><span class="pc__name">Minghong Fang</span><span class="pc__affil">University of Louisville</span></li>
+          <li><span class="pc__name">Mohamed Wahib</span><span class="pc__affil">RIKEN R-CCS</span></li>
+          <li><span class="pc__name">Neharika Jali</span><span class="pc__affil">Carnegie Mellon University</span></li>
+          <li><span class="pc__name">Pekka Enberg</span><span class="pc__affil">Turso</span></li>
+          <li><span class="pc__name">Rishi Sharma</span><span class="pc__affil">Microsoft</span></li>
+          <li><span class="pc__name">Rishika Bhagwatkar</span><span class="pc__affil">Mila Quebec AI Institute</span></li>
+          <li><span class="pc__name">Saurabh Kalikar</span><span class="pc__affil">Google</span></li>
+          <li><span class="pc__name">Siddhartha Jain</span><span class="pc__affil">UT Austin</span></li>
+          <li><span class="pc__name">Sourangshu Bhattacharya</span><span class="pc__affil">IIT Kharagpur</span></li>
+          <li><span class="pc__name">Stefanos Laskaridis</span><span class="pc__affil">Amazon</span></li>
+          <li><span class="pc__name">Vasileios Tsouvalas</span><span class="pc__affil">Eindhoven University of Technology</span></li>
+          <li><span class="pc__name">Virendra Marathe</span><span class="pc__affil">Oracle</span></li>
+          <li><span class="pc__name">Wenyue Hua</span><span class="pc__affil">Microsoft</span></li>
+          <li><span class="pc__name">Yae Jee Cho</span><span class="pc__affil">Google</span></li>
+          <li><span class="pc__name">Yogesh Simmhan</span><span class="pc__affil">IISc Bangalore</span></li>
+          <li><span class="pc__name">Zengqing Wu</span><span class="pc__affil">Osaka University</span></li>
+          <li><span class="pc__name">Zexi Li</span><span class="pc__affil">CUHK</span></li>
+          <li><span class="pc__name">Zhanhong Jiang</span><span class="pc__affil">Iowa State University</span></li>
+          <li><span class="pc__name">Zhenheng Tang</span><span class="pc__affil">HKUST</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__brand">AgenticOS @ NeurIPS 2026</p>
+        <p class="footer__tag">Co-designing Systems and ML Foundations of an OS Layer for Agentic AI</p>
+      </div>
+      <div class="footer__links">
+        <a href="#cfp">Call for Papers</a>
+        <a href="#dates">Important Dates</a>
+        <a href="#organizers">Organizers</a>
+        <a href="mailto:suparna.bhattacharya@hpe.com">Contact</a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 AgenticOS Workshop Organizers. Held in conjunction with NeurIPS 2026, Sydney.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

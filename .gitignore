@@ -1,0 +1,10 @@
+# Workshop proposal — internal, marked "Do not distribute"
+NeurIPS_26_workshop_proposal.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Preview / temp artifacts
+assets/images/_preview_*.png
+/tmp/
