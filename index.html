@@ -130,15 +130,15 @@
         <p class="section__intro">
           This workshop focuses on the fundamental research questions at the intersection of ML and
           systems that must be answered to make agentic AI reliable, sharable, scalable, and
-          evolvable. We invite contributions on topics including, but not limited to:
+          evolvable. We invite contributions that address the key questions of the workshop and
+          the key topics, including, but not limited to:
         </p>
         <div class="topic-groups">
           <article class="topic-group">
-            <h3>Foundations &amp; Abstractions</h3>
+            <h3>Agentic OS Foundations &amp; Abstractions</h3>
             <ul>
-              <li>Architectures and training algorithms for foundation models to serve as first-class system components rather than black-box API endpoints</li>
-              <li>Minimal, portable abstractions for building and composing agentic systems</li>
-              <li>Agent communication and interoperability protocols (e.g., MCP, A2A) as candidate building blocks for a system-layer standard</li>
+              <li>Minimal, portable abstractions and theoretical principles for building and composing an agentic OS</li>
+              <li>Architectures, training, adaptation, and steering algorithms for foundation models to serve as first-class system components rather than black-box API endpoints</li>
             </ul>
           </article>
           <article class="topic-group">
@@ -154,6 +154,7 @@
               <li>Cross-layer optimization for agentic workloads (compute, memory, network, cost, latency)</li>
               <li>Scheduling and resource management for agentic workloads, including cluster/GPU autoscaling under multi-agent contention</li>
               <li>Model routing and composition under uncertainty</li>
+              <li>Joint optimization of model composition and context management</li>
             </ul>
           </article>
           <article class="topic-group">
@@ -161,20 +162,21 @@
             <ul>
               <li>Designing long-horizon agentic systems: planning, persistence, and failure recovery</li>
               <li>Constrained self-evolution: how agents adapt from operational experience while preserving safety and reproducibility</li>
+              <li>Design challenges for agentic systems that support evolution</li>
             </ul>
           </article>
           <article class="topic-group">
             <h3>Trust, Safety &amp; Governance</h3>
             <ul>
-              <li>Trust, safety, and security models for agentic systems: isolation, access control, and threat models specific to autonomous, tool-using agents</li>
+              <li>Trust, safety, and security for agentic systems: isolation, access control, and threat models specific to autonomous, tool-using agents</li>
               <li>Observability and auditability of autonomous agent behavior</li>
             </ul>
           </article>
           <article class="topic-group">
-            <h3>Evaluation &amp; Applications</h3>
+            <h3>Evaluation &amp; Deployment</h3>
             <ul>
-              <li>Evaluation methodology, benchmarks, and testbeds for agentic systems</li>
-              <li>Agentic AI for applications such as scientific discovery and high-performance computing</li>
+              <li>Evaluation methodology, benchmarks, and testbeds for AgenticOS</li>
+              <li>Domain-specific agentic system deployment challenges and solutions</li>
             </ul>
           </article>
         </div>
@@ -211,7 +213,7 @@
           </article>
           <article class="submission-format">
             <h3>Regular Papers</h3>
-            <p>Submissions should present original research or real-world experience studies. Original research must not have appeared elsewhere for publication and must not be under review for another refereed publication.</p>
+            <p>Submissions should present original research, real-world experience studies, or analyses of the challenges involved in deploying complex agentic systems.</p>
             <p><strong>Length:</strong> Up to 6 pages.</p>
           </article>
         </div>
@@ -221,7 +223,10 @@
             Submissions should adhere to the NeurIPS formatting guidelines
             (<a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip">download the NeurIPS 2026 template</a>).
           </p>
+          <p>All submissions must be anonymized for double-blind review. Authors should remove names, affiliations, acknowledgments, and other identifying information from their submissions.</p>
           <p>References and appendices are not subject to page limits. However, the main paper must be self-contained, and reviewers are not required to consult the appendix.</p>
+          <h3>Review criteria</h3>
+          <p>Submissions will be evaluated based on technical novelty, interest to the community, lessons learned, and relevance to AgenticOS now or in the future.</p>
           <p>There are no formal proceedings for this workshop. Accepted submissions will have the option of being published on the workshop website.</p>
         </div>
         <div class="callout">
