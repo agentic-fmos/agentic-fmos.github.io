@@ -65,7 +65,7 @@
         </div>
         <div class="hero__meta-item">
           <span class="hero__meta-label">Submissions</span>
-          <span class="hero__meta-value">via OpenReview</span>
+          <span class="hero__meta-value">To be announced</span>
         </div>
       </div>
       <div class="hero__cta">
@@ -130,18 +130,54 @@
         <p class="section__intro">
           This workshop focuses on the fundamental research questions at the intersection of ML and
           systems that must be answered to make agentic AI reliable, sharable, scalable, and
-          evolvable. We invite contributions on topics including:
+          evolvable. We invite contributions on topics including, but not limited to:
         </p>
-        <ol class="topics">
-          <li><span class="topics__num">01</span><span>Should foundation models be trained differently to serve as system components?</span></li>
-          <li><span class="topics__num">02</span><span>What are the minimal abstractions for building agentic systems?</span></li>
-          <li><span class="topics__num">03</span><span>Agentic memory: representations, policies, and cross-layer optimization.</span></li>
-          <li><span class="topics__num">04</span><span>Cross-layer optimization for agentic workloads.</span></li>
-          <li><span class="topics__num">05</span><span>Model routing and composition under uncertainty.</span></li>
-          <li><span class="topics__num">06</span><span>Designing long-horizon agentic systems.</span></li>
-          <li><span class="topics__num">07</span><span>Constrained self-evolution: safety, reproducibility, and governance.</span></li>
-          <li><span class="topics__num">08</span><span>Evaluation methodology for agentic systems.</span></li>
-        </ol>
+        <div class="topic-groups">
+          <article class="topic-group">
+            <h3>Foundations &amp; Abstractions</h3>
+            <ul>
+              <li>Architectures and training algorithms for foundation models to serve as first-class system components rather than black-box API endpoints</li>
+              <li>Minimal, portable abstractions for building and composing agentic systems</li>
+              <li>Agent communication and interoperability protocols (e.g., MCP, A2A) as candidate building blocks for a system-layer standard</li>
+            </ul>
+          </article>
+          <article class="topic-group">
+            <h3>Data, Memory &amp; State</h3>
+            <ul>
+              <li>Agentic memory: representations, retrieval and update policies, consistency, and cross-layer optimization</li>
+              <li>Storage and file systems for agent state, context, and long-lived artifacts</li>
+            </ul>
+          </article>
+          <article class="topic-group">
+            <h3>Resource Management &amp; Execution</h3>
+            <ul>
+              <li>Cross-layer optimization for agentic workloads (compute, memory, network, cost, latency)</li>
+              <li>Scheduling and resource management for agentic workloads, including cluster/GPU autoscaling under multi-agent contention</li>
+              <li>Model routing and composition under uncertainty</li>
+            </ul>
+          </article>
+          <article class="topic-group">
+            <h3>Long-Horizon &amp; Self-Evolving Agents</h3>
+            <ul>
+              <li>Designing long-horizon agentic systems: planning, persistence, and failure recovery</li>
+              <li>Constrained self-evolution: how agents adapt from operational experience while preserving safety and reproducibility</li>
+            </ul>
+          </article>
+          <article class="topic-group">
+            <h3>Trust, Safety &amp; Governance</h3>
+            <ul>
+              <li>Trust, safety, and security models for agentic systems: isolation, access control, and threat models specific to autonomous, tool-using agents</li>
+              <li>Observability and auditability of autonomous agent behavior</li>
+            </ul>
+          </article>
+          <article class="topic-group">
+            <h3>Evaluation &amp; Applications</h3>
+            <ul>
+              <li>Evaluation methodology, benchmarks, and testbeds for agentic systems</li>
+              <li>Agentic AI for applications such as scientific discovery and high-performance computing</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -152,14 +188,45 @@
         <h2 class="section__title">Call for papers</h2>
         <div class="prose">
           <p>
-            We welcome submissions that advance the co-design of ML and systems foundations for an
-            operating-system layer for agentic AI.
+            <strong>AgenticOS: Co-designing Systems and ML Foundations of an OS Layer for Agentic AI</strong>
           </p>
+          <dl class="cfp-details">
+            <div><dt>Workshop website</dt><dd><a href="https://agentic-fmos.github.io/">agentic-fmos.github.io</a></dd></div>
+            <div><dt>Location</dt><dd>Sydney, Australia</dd></div>
+            <div><dt>Date</dt><dd>December 12, 2026</dd></div>
+            <div><dt>Submission link</dt><dd>To be announced</dd></div>
+          </dl>
+          <h3>Call for submissions</h3>
+          <p>
+            This workshop focuses on the fundamental research questions at the intersection of ML
+            and systems that must be answered to make agentic AI reliable, sharable, scalable, and
+            evolvable. We welcome submissions in the following two formats:
+          </p>
+        </div>
+        <div class="submission-formats">
+          <article class="submission-format">
+            <h3>Extended Abstracts</h3>
+            <p>We encourage participants to submit preliminary but interesting ideas that have not been published before. These submissions would benefit from additional exposure and discussion that can shape a better future publication.</p>
+            <p><strong>Length:</strong> Up to 2 pages plus one additional page solely for references.</p>
+          </article>
+          <article class="submission-format">
+            <h3>Short Papers</h3>
+            <p>Submissions must represent original material that has not appeared elsewhere for publication and that is not under review for another refereed publication.</p>
+            <p><strong>Length:</strong> Up to 4 pages of technical content plus up to two additional pages solely for references.</p>
+          </article>
+        </div>
+        <div class="prose cfp-guidelines">
+          <h3>Submission guidelines</h3>
+          <p>
+            Submissions should adhere to the NeurIPS formatting guidelines
+            (<a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip">download the NeurIPS 2026 template</a>).
+          </p>
+          <p>There are no formal proceedings for this workshop. Accepted submissions will have the option of being published on the workshop website.</p>
         </div>
         <div class="callout">
           <div>
-            <h3 class="callout__title">Submit your work</h3>
-            <p>Submission portal opens ahead of the deadline. Check back for the OpenReview link.</p>
+            <h3 class="callout__title">Submission portal coming soon</h3>
+            <p>The submission link will be posted here when it becomes available.</p>
           </div>
           <a class="btn btn--primary" href="#dates">See deadlines</a>
         </div>
