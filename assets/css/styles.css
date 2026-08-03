@@ -246,6 +246,44 @@ a:hover { text-decoration: underline; }
 .card p { margin: 0; color: var(--ink-soft); font-size: 0.97rem; }
 
 /* ===================== TOPICS ===================== */
+.research-questions {
+  list-style: none;
+  counter-reset: question;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.research-questions li {
+  counter-increment: question;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  color: var(--ink);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+.research-questions li::before {
+  content: counter(question, decimal-leading-zero);
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--brand);
+  font-size: 1.05rem;
+  flex: none;
+}
+.scope-goal {
+  margin: 32px 0 0;
+  padding: 22px 24px;
+  border-left: 4px solid var(--brand-2);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
 .topic-groups {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -267,6 +305,7 @@ a:hover { text-decoration: underline; }
 .topic-group ul { margin: 0; padding-left: 20px; color: var(--ink-soft); }
 .topic-group li { margin-bottom: 8px; }
 .topic-group li:last-child { margin-bottom: 0; }
+.cfp-topics { margin-top: 26px; }
 
 /* ===================== CFP ===================== */
 .prose h3 {
@@ -294,6 +333,8 @@ a:hover { text-decoration: underline; }
   gap: 20px;
   margin-top: 26px;
 }
+.submission-intro { margin-top: 38px; }
+.submission-intro h3 { margin-top: 0; }
 .submission-format {
   border-left: 4px solid var(--brand);
   background: var(--surface-alt);
@@ -508,6 +549,7 @@ a:hover { text-decoration: underline; }
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 900px) {
   .cards--3 { grid-template-columns: 1fr; }
+  .research-questions { grid-template-columns: 1fr; }
   .topic-groups { grid-template-columns: 1fr; }
   .submission-formats { grid-template-columns: 1fr; }
   .speakers { grid-template-columns: repeat(2, 1fr); }
