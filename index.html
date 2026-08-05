@@ -65,7 +65,7 @@
         </div>
         <div class="hero__meta-item">
           <span class="hero__meta-label">Submissions</span>
-          <span class="hero__meta-value">To be announced</span>
+          <a class="hero__meta-value" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AgenticOS">OpenReview</a>
         </div>
       </div>
       <div class="hero__cta">
@@ -161,14 +161,19 @@
             <div><dt>Workshop website</dt><dd><a href="https://agentic-fmos.github.io/">agentic-fmos.github.io</a></dd></div>
             <div><dt>Location</dt><dd>Sydney, Australia</dd></div>
             <div><dt>Date</dt><dd>December 12, 2026</dd></div>
-            <div><dt>Submission link</dt><dd>To be announced</dd></div>
+            <div><dt>Submission link</dt><dd><a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AgenticOS">OpenReview</a></dd></div>
           </dl>
           <h3>Call for submissions</h3>
           <p>
-            This workshop focuses on the fundamental research questions at the intersection of ML
-            and systems that must be answered to make agentic AI reliable, sharable, scalable, and
-            evolvable. We invite contributions that address the key questions of the workshop and
-            the following topics, including, but not limited to:
+            Foundation models are evolving from stateless inference services into persistent,
+            tool-using computational entities. As agentic AI systems grow in scale and capability,
+            they require a common operating layer for memory, execution, scheduling, governance,
+            and resource management. This workshop brings together the ML and systems communities
+            to co-design the principles, abstractions, and implementations of an operating system
+            for agentic AI, recognizing that future model capabilities and future systems
+            abstractions must evolve together. We invite contributions that address the fundamental
+            research challenges in building an operating system for agentic AI, including, but not
+            limited to:
           </p>
         </div>
         <div class="topic-groups cfp-topics">
@@ -176,14 +181,14 @@
             <h3>Agentic OS Foundations &amp; Abstractions</h3>
             <ul>
               <li>Minimal, portable abstractions and theoretical principles for building and composing an agentic OS</li>
-              <li>Architectures, training, adaptation, and steering algorithms for foundation models to serve as first-class system components rather than black-box API endpoints</li>
+              <li>Architectures, training, adaptation, and alignment of foundation models as first-class system components</li>
             </ul>
           </article>
           <article class="topic-group">
-            <h3>Data, Memory &amp; State</h3>
+            <h3>Memory, State &amp; Storage</h3>
             <ul>
               <li>Agentic memory: representations, retrieval and update policies, consistency, and cross-layer optimization</li>
-              <li>Storage and file systems for agent state, context, and long-lived artifacts</li>
+              <li>Storage systems and file systems for agent state, context, and long-lived artifacts</li>
             </ul>
           </article>
           <article class="topic-group">
@@ -191,51 +196,50 @@
             <ul>
               <li>Cross-layer optimization for agentic workloads (compute, memory, network, cost, latency)</li>
               <li>Scheduling and resource management for agentic workloads, including cluster/GPU autoscaling under multi-agent contention</li>
-              <li>Model routing and composition under uncertainty</li>
-              <li>Joint optimization of model composition and context management</li>
+              <li>Model routing, multi-model composition, and context management under uncertainty</li>
             </ul>
           </article>
           <article class="topic-group">
             <h3>Long-Horizon &amp; Self-Evolving Agents</h3>
             <ul>
-              <li>Designing long-horizon agentic systems: planning, persistence, and failure recovery</li>
-              <li>Constrained self-evolution: how agents adapt from operational experience while preserving safety and reproducibility</li>
-              <li>Design challenges for agentic systems that support evolution</li>
+              <li>Long-horizon execution: planning, persistence, checkpointing, and recovery</li>
+              <li>Continual adaptation and constrained self-evolution</li>
+              <li>System support for autonomous adaptation while preserving reproducibility, safety, and governance</li>
             </ul>
           </article>
           <article class="topic-group">
             <h3>Trust, Safety &amp; Governance</h3>
             <ul>
               <li>Trust, safety, and security for agentic systems: isolation, access control, and threat models specific to autonomous, tool-using agents</li>
-              <li>Observability and auditability of autonomous agent behavior</li>
+              <li>Observability, provenance, and auditability of autonomous agent behavior</li>
             </ul>
           </article>
           <article class="topic-group">
             <h3>Evaluation &amp; Deployment</h3>
             <ul>
-              <li>Evaluation methodology, benchmarks, and testbeds for AgenticOS</li>
+              <li>Evaluation methodologies, benchmarks, simulators, and testbeds</li>
               <li>Domain-specific agentic system deployment challenges and solutions</li>
             </ul>
           </article>
         </div>
         <div class="prose submission-intro">
-          <h3>Submission formats</h3>
-          <p>We welcome submissions in the following two formats:</p>
+          <h3>Submission guidelines</h3>
+          <p>We welcome submissions in two formats:</p>
         </div>
         <div class="submission-formats">
           <article class="submission-format">
             <h3>Extended Abstracts</h3>
-            <p>Extended abstracts may present preliminary work, visionary ideas, or position papers.</p>
-            <p><strong>Length:</strong> Up to 2 pages.</p>
+            <p>Extended abstracts may present visionary ideas, AgenticOS abstractions, or position papers that can spark interesting discussions on the workshop theme.</p>
+            <p><strong>Length:</strong> Up to 2 pages of technical content.</p>
           </article>
           <article class="submission-format">
             <h3>Regular Papers</h3>
-            <p>Submissions should present original research, real-world experience studies, or analyses of the challenges involved in deploying complex agentic systems.</p>
-            <p><strong>Length:</strong> Up to 6 pages.</p>
+            <p>Regular papers should present original research, systems experience, empirical analyses, or deployment studies relevant to the workshop themes. Papers must be original, unpublished work. As this workshop is non-archival, works under review or planned for submission to other venues may also be submitted, provided they do not violate the policies of those venues.</p>
+            <p><strong>Length:</strong> Up to 6 pages of technical content.</p>
           </article>
         </div>
         <div class="prose cfp-guidelines">
-          <h3>Submission guidelines</h3>
+          <p class="cfp-encouragement"><em>We particularly encourage submissions that span both machine learning and systems, as well as experience reports, deployment lessons, and negative results that expose important open research challenges.</em></p>
           <p>
             Submissions should adhere to the NeurIPS formatting guidelines
             (<a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip">download the NeurIPS 2026 template</a>).
@@ -248,10 +252,10 @@
         </div>
         <div class="callout">
           <div>
-            <h3 class="callout__title">Submission portal coming soon</h3>
-            <p>The submission link will be posted here when it becomes available.</p>
+            <h3 class="callout__title">Submit your work</h3>
+            <p>Submit your paper through the AgenticOS workshop portal on OpenReview.</p>
           </div>
-          <a class="btn btn--primary" href="#dates">See deadlines</a>
+          <a class="btn btn--primary" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AgenticOS">Submit on OpenReview</a>
         </div>
       </div>
     </section>
@@ -264,7 +268,7 @@
         <div class="dates">
           <div class="dates__item">
             <div class="dates__when">Aug 29, 2026</div>
-            <div class="dates__what">Paper submission deadline (OpenReview)</div>
+            <div class="dates__what">Paper submission deadline (<a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AgenticOS">OpenReview</a>)</div>
           </div>
           <div class="dates__item">
             <div class="dates__when">Sep 29, 2026</div>
@@ -329,6 +333,11 @@
             <div class="speaker__photo"><img src="assets/images/manish-gupta.jpg" alt="Manish Gupta" loading="lazy" /></div>
             <h3 class="speaker__name">Manish Gupta</h3>
             <p class="speaker__affil">Google DeepMind</p>
+          </article>
+          <article class="speaker">
+            <div class="speaker__photo"><img src="assets/images/joe.jpg" alt="Joe Zhou" loading="lazy" /></div>
+            <h3 class="speaker__name">Joe Zhou</h3>
+            <p class="speaker__affil">MultiFi.ai</p>
           </article>
         </div>
       </div>
