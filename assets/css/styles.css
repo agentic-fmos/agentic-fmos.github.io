@@ -151,6 +151,17 @@ a:hover { text-decoration: underline; }
   margin: 18px 0 0;
   max-width: 100%;
 }
+.hero__tagline {
+  max-width: 900px;
+  margin: 24px 0 0;
+  padding-left: 18px;
+  border-left: 3px solid var(--brand-2);
+  color: #f1f5f9;
+  font-family: var(--font-head);
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
 .hero__lede {
   color: #a9b4cc;
   max-width: 100%;
