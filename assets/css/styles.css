@@ -532,6 +532,62 @@ a:hover { text-decoration: underline; }
 /* ===================== PC ===================== */
 .committee-policies { margin-bottom: 36px; }
 .committee-policies h3 { margin-top: 0; }
+.committee-note { margin-top: 32px; margin-bottom: 0; }
+
+/* ===================== REVIEW GUIDELINES ===================== */
+.review-tracks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.review-track {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--brand);
+  border-radius: var(--radius-sm);
+  padding: 24px 26px;
+  box-shadow: var(--shadow-sm);
+}
+.review-track__title {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin: 0 0 10px;
+}
+.review-track__purpose { margin: 0 0 18px; color: var(--ink-soft); font-size: 0.98rem; }
+.review-criteria { margin: 0; display: grid; gap: 12px; }
+.review-criteria dt {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.review-criteria dd { margin: 2px 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+.review-flag {
+  margin: 16px 0 0;
+  padding: 12px 15px;
+  border-radius: var(--radius-sm);
+  font-size: 0.93rem;
+  color: var(--ink-soft);
+}
+.review-flag__label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+}
+.review-flag--allow {
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+}
+.review-flag--allow .review-flag__label { color: #047857; }
+.review-flag--reject {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+.review-flag--reject .review-flag__label { color: #b91c1c; }
+
 .pc {
   list-style: none;
   padding: 0;
@@ -581,6 +637,7 @@ a:hover { text-decoration: underline; }
   .research-questions { grid-template-columns: 1fr; }
   .topic-groups { grid-template-columns: 1fr; }
   .submission-formats { grid-template-columns: 1fr; }
+  .review-tracks { grid-template-columns: 1fr; }
   .speakers { grid-template-columns: repeat(2, 1fr); }
   .organizers { grid-template-columns: 1fr; }
   .pc { grid-template-columns: 1fr; }
