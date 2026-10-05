@@ -533,6 +533,12 @@ a:hover { text-decoration: underline; }
 .committee-policies { margin-bottom: 36px; }
 .committee-policies h3 { margin-top: 0; }
 .committee-note { margin-top: 32px; margin-bottom: 0; }
+.committee-heading {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin: 32px 0 16px;
+}
 
 /* ===================== REVIEW GUIDELINES ===================== */
 .review-tracks {
