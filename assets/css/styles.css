@@ -544,6 +544,7 @@ a:hover { text-decoration: underline; }
   padding: 2px 9px;
   margin-bottom: 8px;
 }
+.sched__kind + .sched__kind { margin-left: 4px; }
 .sched__kind--keynote { color: #9a3412; background: #ffedd5; border-color: #fed7aa; }
 .sched__kind--virtual { color: #0e7490; background: #cffafe; border-color: #a5f3fc; }
 .sched__kind--panel { color: #065f46; background: var(--ok-bg); border-color: #a7f3d0; }
