@@ -17,3 +17,25 @@
     });
   });
 })();
+
+// Schedule: expand / collapse all talk abstracts
+(function () {
+  const button = document.querySelector('.schedule__toggle');
+  const panels = Array.from(document.querySelectorAll('.sched__abstract'));
+  if (!button || panels.length === 0) return;
+
+  function sync() {
+    const anyClosed = panels.some(function (d) { return !d.open; });
+    button.textContent = anyClosed ? 'Expand all abstracts' : 'Collapse all abstracts';
+    button.setAttribute('aria-expanded', String(!anyClosed));
+  }
+
+  button.addEventListener('click', function () {
+    const anyClosed = panels.some(function (d) { return !d.open; });
+    panels.forEach(function (d) { d.open = anyClosed; });
+    sync();
+  });
+
+  panels.forEach(function (d) { d.addEventListener('toggle', sync); });
+  sync();
+})();

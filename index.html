@@ -364,32 +364,208 @@
         <p class="section__kicker">December 11, 2026</p>
         <h2 class="section__title">Schedule</h2>
         <p class="section__intro">A full-day program organized to maximize discussion and community building.</p>
+        <div class="schedule__tools">
+          <p class="schedule__hint">Select <strong>Abstract</strong> on any talk to read its details.</p>
+          <button type="button" class="schedule__toggle" aria-expanded="false">Expand all abstracts</button>
+        </div>
         <div class="schedule">
-          <div class="sched"><div class="sched__time">8:55 &ndash; 9:00</div><div class="sched__body"><h3>Opening Remarks</h3></div></div>
-          <div class="sched"><div class="sched__time">9:00 &ndash; 9:40</div><div class="sched__body"><h3>Keynote Talk</h3></div></div>
-          <div class="sched"><div class="sched__time">9:40 &ndash; 10:10</div><div class="sched__body"><h3>Invited Talk</h3></div></div>
-          <div class="sched sched--break"><div class="sched__time">10:10 &ndash; 10:30</div><div class="sched__body"><h3>Tea Break</h3></div></div>
-          <div class="sched"><div class="sched__time">10:30 &ndash; 11:00</div><div class="sched__body"><h3>Spotlight Papers</h3></div></div>
-          <div class="sched"><div class="sched__time">11:00 &ndash; 11:30</div><div class="sched__body"><h3>Invited Talk</h3></div></div>
-          <div class="sched"><div class="sched__time">11:40 &ndash; 12:40</div><div class="sched__body"><h3>Poster Session</h3></div></div>
-          <div class="sched sched--break"><div class="sched__time">12:40 &ndash; 1:45</div><div class="sched__body"><h3>Lunch Break</h3></div></div>
-          <div class="sched"><div class="sched__time">1:45 &ndash; 2:25</div><div class="sched__body"><h3>Keynote Talk</h3></div></div>
-          <div class="sched"><div class="sched__time">2:25 &ndash; 2:55</div><div class="sched__body"><h3>Invited Talk</h3></div></div>
-          <div class="special-session">
-            <div class="sched sched--session-header"><div class="sched__time">3:00 &ndash; 5:15</div><div class="sched__body">
-              <h3>Special Session: Co-designing ML &amp; Systems Foundations of AgenticOS: Current Reality &amp; the Way Forward</h3>
-            </div></div>
-            <div class="sched sched--session-item"><div class="sched__time">3:00 &ndash; 3:15</div><div class="sched__body"><h3>Invited Talk 1</h3></div></div>
-            <div class="sched sched--session-item"><div class="sched__time">3:15 &ndash; 3:30</div><div class="sched__body"><h3>Invited Talk 2</h3></div></div>
-            <div class="sched sched--session-item"><div class="sched__time">3:30 &ndash; 3:45</div><div class="sched__body"><h3>Invited Talk 3</h3></div></div>
-            <div class="sched sched--session-item"><div class="sched__time">3:45 &ndash; 4:00</div><div class="sched__body"><h3>Invited Talk 4</h3></div></div>
-            <div class="sched sched--session-item"><div class="sched__time">4:00 &ndash; 4:15</div><div class="sched__body"><h3>Invited Talk 5</h3></div></div>
-            <div class="sched sched--session-item sched--feature"><div class="sched__time">4:15 &ndash; 5:15</div><div class="sched__body">
-              <h3>Panel Discussion</h3>
-              <p>Moderated by Ian Foster</p>
-            </div></div>
+
+          <!-- Morning -->
+          <h3 class="schedule__block">Morning</h3>
+
+          <div class="sched">
+            <div class="sched__time">8:30 &ndash; 8:45</div>
+            <div class="sched__body">
+              <span class="sched__kind">Opening</span>
+              <h4 class="sched__title">Opening Remarks</h4>
+              <p class="sched__speaker">Suparna Bhattacharya</p>
+            </div>
           </div>
-          <div class="sched"><div class="sched__time">5:15 &ndash; 5:30</div><div class="sched__body"><h3>Closing Remarks &amp; Best Paper Award</h3></div></div>
+
+          <div class="sched sched--keynote">
+            <div class="sched__time">8:45 &ndash; 9:30</div>
+            <div class="sched__body">
+              <span class="sched__kind sched__kind--keynote">Keynote</span>
+              <h4 class="sched__title"><span class="sched__tba">Title to be announced</span></h4>
+              <p class="sched__speaker">Ion Stoica</p>
+            </div>
+          </div>
+
+          <div class="sched">
+            <div class="sched__time">9:30 &ndash; 10:00</div>
+            <div class="sched__body">
+              <span class="sched__kind">Invited Talk</span>
+              <h4 class="sched__title">Theory of Agent: Teaching Language Agents to Think and Act</h4>
+              <p class="sched__speaker">Hongru Wang</p>
+              <details class="sched__abstract">
+                <summary>Abstract</summary>
+                <p>The talk will discuss a unified perspective on agentic AI, focusing on the allocation of epistemic effort between internal reasoning and external acting, as well as implications for building autonomous and self-evolving agents.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="sched">
+            <div class="sched__time">10:00 &ndash; 10:30</div>
+            <div class="sched__body">
+              <span class="sched__kind">Invited Talk</span>
+              <h4 class="sched__title">The Trust Layer for AgenticOS: Evaluation, Alignment and Runtime Protection</h4>
+              <p class="sched__speaker">Bo Li</p>
+              <details class="sched__abstract">
+                <summary>Abstract</summary>
+                <p>Foundation models have garnered widespread attention due to their impressive performance across a range of applications. However, our understanding of the trustworthiness and risks of these models remains limited. The temptation to deploy proficient foundation models in sensitive domains like healthcare and finance, where errors carry significant consequences, underscores the need for rigorous safety evaluations, enhancement, and guarantees. Recognizing the urgent need for developing safe and beneficial AI, our recent research seeks to design a unified platform to evaluate the safety of LLMs and multimodal foundation models (MMFM) from both regulatory compliance risk assessment principle, and use-case-driven principle such as toxicity, stereotype bias, adversarial robustness, OOD robustness, ethics, privacy, and fairness. Based on our understanding of risks of FMs, we have been focused on enhancing their safety through knowledge integration and provide safety guardrail and certifications.</p>
+                <p>In this talk, I will first outline our foundational principles for safety evaluation, detail our red teaming tactics, and share insights gleaned from evaluating foundation models on our DecodingTrust, AIR, and MMDT platforms for LLMs and MMFM, including close-source, open-source, and compressed models. Further, I will delve into our work on enhancing model safety, such as hallucination mitigation. I will also explain how knowledge integration helps align models and prove that the RAG framework achieves provably lower conformal generation risks compared to vanilla LLMs. Finally, I will briefly discuss our efficient and resilient guardrail framework for risk mitigation in practice.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="sched sched--break">
+            <div class="sched__time">10:30 &ndash; 11:00</div>
+            <div class="sched__body"><h4 class="sched__title">Morning Break</h4></div>
+          </div>
+
+          <div class="sched">
+            <div class="sched__time">11:00 &ndash; 11:15</div>
+            <div class="sched__body">
+              <span class="sched__kind sched__kind--virtual">Virtual Slot</span>
+              <h4 class="sched__title">The Harness is the Bug: Rethinking Agent Execution from the Ground Up</h4>
+              <p class="sched__speaker">Gosia &middot; Virtual Posters</p>
+            </div>
+          </div>
+
+          <div class="sched">
+            <div class="sched__time">11:15 &ndash; 12:00</div>
+            <div class="sched__body">
+              <span class="sched__kind">Spotlights</span>
+              <h4 class="sched__title">Spotlight Papers</h4>
+              <p class="sched__speaker">Authors</p>
+              <p class="sched__note">About 4 oral presentations: 8&nbsp;min talk + 2&nbsp;min Q&amp;A each</p>
+            </div>
+          </div>
+
+          <div class="sched sched--break">
+            <div class="sched__time">12:00 &ndash; 1:00</div>
+            <div class="sched__body"><h4 class="sched__title">Lunch Break</h4></div>
+          </div>
+
+          <!-- Afternoon -->
+          <h3 class="schedule__block">Afternoon</h3>
+
+          <div class="sched">
+            <div class="sched__time">1:00 &ndash; 2:10</div>
+            <div class="sched__body">
+              <span class="sched__kind">Posters</span>
+              <h4 class="sched__title">Poster Session</h4>
+              <p class="sched__speaker">Authors</p>
+            </div>
+          </div>
+
+          <div class="special-session">
+            <div class="sched sched--session-header">
+              <div class="sched__time">2:10 &ndash; 4:50</div>
+              <div class="sched__body">
+                <span class="sched__kind sched__kind--session">Special Session</span>
+                <h4 class="sched__title">Co-designing ML &amp; Systems Foundations of AgenticOS: Current Reality &amp; the Way Forward</h4>
+              </div>
+            </div>
+
+            <div class="sched sched--session-item">
+              <div class="sched__time">2:10 &ndash; 2:15</div>
+              <div class="sched__body">
+                <h4 class="sched__title">Session Introduction</h4>
+                <p class="sched__speaker">Ian Foster</p>
+              </div>
+            </div>
+
+            <div class="sched sched--session-item">
+              <div class="sched__time">2:15 &ndash; 2:30</div>
+              <div class="sched__body">
+                <span class="sched__kind">Mini Keynote 1</span>
+                <h4 class="sched__title">The Golden Age of Model-Software-Hardware Co-design</h4>
+                <p class="sched__speaker">Azalia Mirhoseini</p>
+                <details class="sched__abstract">
+                  <summary>Abstract</summary>
+                  <p>Inference demand is projected to grow 10&ndash;100x per year, and at the scale AI is now trained and served, merely building more datacenter capacity is impractical. Meeting this demand will require new sources of performance. In this talk, I will argue that customization through co-design is the key to unlocking those gains, and that the biggest wins will come from full-stack optimization across model, software, and hardware.</p>
+                </details>
+              </div>
+            </div>
+
+            <div class="sched sched--session-item">
+              <div class="sched__time">2:30 &ndash; 2:45</div>
+              <div class="sched__body">
+                <span class="sched__kind">Mini Keynote 2</span>
+                <h4 class="sched__title">Evaluating the Pareto Frontier of Agent Memory</h4>
+                <p class="sched__speaker">Deshraj Yadav</p>
+                <details class="sched__abstract">
+                  <summary>Abstract</summary>
+                  <p>Agents increasingly depend on what they remember across months of work, but memory evaluation has stayed stuck in a question-answer format. A question is itself a retrieval cue: it tells the agent a fact is needed and often which one, so the evaluation begins only after the hardest step has already been done for the system. Real agents acting under an instruction get no such hint. Agent memory should instead be measured through the actions agents take, with two things reported alongside accuracy. Cost and latency, because memory is an optimization problem and a system can buy accuracy by re-reading everything with a frontier model at a price no deployment would pay. And per-test certification in both directions, solvable with the relevant history and unsolvable without it, because audits of widely used benchmarks have turned up wrong answer keys, mislabeled evidence, and judges that accept most deliberately incorrect answers.</p>
+                  <p>Early results across built-in memory, dedicated memory plugins, and full context on an open source harness show two plugins reaching nearly identical accuracy while differing by about 70% in cost and close to 3x in latency, exactly the tradeoff that accuracy-only reporting hides.</p>
+                </details>
+              </div>
+            </div>
+
+            <div class="sched sched--session-item">
+              <div class="sched__time">2:45 &ndash; 3:00</div>
+              <div class="sched__body">
+                <span class="sched__kind">Mini Keynote 3</span>
+                <h4 class="sched__title">Orchestrating Agentic Systems across Edge and Cloud</h4>
+                <p class="sched__speaker">Yogesh Simmhan</p>
+              </div>
+            </div>
+
+            <div class="sched sched--session-item sched--break">
+              <div class="sched__time">3:00 &ndash; 3:30</div>
+              <div class="sched__body"><h4 class="sched__title">Coffee Break</h4></div>
+            </div>
+
+            <div class="sched sched--session-item">
+              <div class="sched__time">3:30 &ndash; 3:45</div>
+              <div class="sched__body">
+                <span class="sched__kind">Mini Keynote 4</span>
+                <h4 class="sched__title">Enhancing the Efficiency of AI Models and Agents</h4>
+                <p class="sched__speaker">Manish Gupta</p>
+              </div>
+            </div>
+
+            <div class="sched sched--session-item">
+              <div class="sched__time">3:45 &ndash; 4:00</div>
+              <div class="sched__body">
+                <span class="sched__kind">Mini Keynote 5</span>
+                <h4 class="sched__title">From Tokens to Tasks: Efficient Execution of Agentic AI at Scale</h4>
+                <p class="sched__speaker">Mohamed Wahib</p>
+                <details class="sched__abstract">
+                  <summary>Abstract</summary>
+                  <p>Agentic AI shifts the performance challenge from serving individual model requests to executing dynamic workflows that interleave inference, tool execution, API calls, and data access. Optimizing inference alone is therefore insufficient to minimize task completion time. This talk presents our ongoing investigation into efficient execution of agentic workloads on heterogeneous computing platforms. We examine how CPU&ndash;GPU interactions, memory and I/O demands, and contention across concurrent tasks shape end-to-end performance, and explore scheduling and resource allocation strategies to improve throughput and latency. Using supercomputing platforms as a testbed, we investigate how these challenges evolve at scale and discuss their implications for the execution and resource management foundations of an agentic operating system.</p>
+                </details>
+              </div>
+            </div>
+
+            <div class="sched sched--session-item sched--feature">
+              <div class="sched__time">4:00 &ndash; 4:50</div>
+              <div class="sched__body">
+                <span class="sched__kind sched__kind--panel">Panel</span>
+                <h4 class="sched__title">Panel Discussion</h4>
+                <p class="sched__speaker">Host: Ian Foster</p>
+                <ul class="sched__panelists" aria-label="Panelists">
+                  <li>Azalia Mirhoseini</li>
+                  <li>Deshraj Yadav</li>
+                  <li>Yogesh Simmhan</li>
+                  <li>Manish Gupta</li>
+                  <li>Mohamed Wahib</li>
+                  <li>Joe Zhou</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="sched">
+            <div class="sched__time">4:50 &ndash; 5:00</div>
+            <div class="sched__body">
+              <span class="sched__kind">Closing</span>
+              <h4 class="sched__title">Best Paper Award &amp; Closing Remarks</h4>
+              <p class="sched__speaker">Tarun Kumar</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
