@@ -10,7 +10,7 @@
   });
 
   // Close the menu when a link is clicked (mobile)
-  links.querySelectorAll('a').forEach(function (a) {
+  links.querySelectorAll('a, button').forEach(function (a) {
     a.addEventListener('click', function () {
       links.classList.remove('is-open');
       toggle.setAttribute('aria-expanded', 'false');
@@ -38,4 +38,26 @@
 
   panels.forEach(function (d) { d.addEventListener('toggle', sync); });
   sync();
+})();
+
+// Community popup (Slack invite)
+(function () {
+  const dialog = document.getElementById('community');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+
+  document.querySelectorAll('[data-community-open]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      dialog.showModal();
+    });
+  });
+
+  dialog.querySelectorAll('[data-community-close]').forEach(function (el) {
+    el.addEventListener('click', function () { dialog.close(); });
+  });
+
+  // Clicking the backdrop (outside the card) closes the dialog
+  dialog.addEventListener('click', function (e) {
+    if (e.target === dialog) dialog.close();
+  });
 })();

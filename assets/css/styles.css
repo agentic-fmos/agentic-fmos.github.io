@@ -84,6 +84,20 @@ a:hover { text-decoration: underline; }
   transition: color 0.15s ease;
 }
 .nav__links a:hover { color: #fff; }
+.nav__community {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(120deg, var(--brand), var(--brand-2));
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.2s ease;
+}
+.nav__community:hover { transform: translateY(-1px); box-shadow: 0 8px 18px -10px rgba(79, 70, 229, 0.9); }
+.nav__community:focus-visible { outline: 2px solid #c7d2fe; outline-offset: 2px; }
 
 .nav__toggle {
   display: none;
@@ -217,6 +231,58 @@ a:hover { text-decoration: underline; }
   color: #e2e8f0;
   border-color: rgba(255, 255, 255, 0.2);
 }
+.btn--outline {
+  background: transparent;
+  color: var(--ink-soft);
+  border-color: var(--line);
+}
+.btn--outline:hover { background: var(--surface-alt); }
+
+/* ===================== MODAL ===================== */
+.modal {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: min(92vw, 520px);
+  width: 100%;
+}
+.modal::backdrop {
+  background: rgba(11, 16, 32, 0.6);
+  backdrop-filter: blur(4px);
+}
+.modal__card {
+  position: relative;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 36px 34px 30px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--brand);
+}
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-mute);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.modal__close:hover { background: var(--surface-alt); color: var(--ink); }
+.modal__close:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.modal__title {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.modal__text { margin: 0 0 24px; color: var(--ink-soft); font-size: 0.98rem; }
+.modal__actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* ===================== SECTIONS ===================== */
 .section { padding: 84px 0; }
@@ -800,6 +866,7 @@ a:hover { text-decoration: underline; }
   }
   .nav__links.is-open { display: flex; }
   .nav__links a { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .nav__community { align-self: flex-start; margin-top: 12px; }
   .nav__toggle { display: flex; }
   .cfp-details { grid-template-columns: 1fr; }
   .dates__item { grid-template-columns: 1fr; gap: 6px; }

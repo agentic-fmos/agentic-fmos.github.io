@@ -38,6 +38,7 @@
         <a href="#schedule">Schedule</a>
         <a href="#organizers">Organizers</a>
         <a href="#committee">Committee</a>
+        <button type="button" class="nav__community" data-community-open>Community</button>
       </nav>
     </div>
   </header>
@@ -72,7 +73,6 @@
       <div class="hero__cta">
         <a class="btn btn--primary" href="#cfp">Call for Papers</a>
         <a class="btn btn--ghost" href="#dates">Important Dates</a>
-        <a class="btn btn--ghost" href="https://join.slack.com/t/agenticos-hq/shared_invite/zt-4fcvubco3-4rEHOh~~ISY2qPBggpWLTg" target="_blank" rel="noopener noreferrer">Join us on Slack</a>
       </div>
     </div>
   </section>
@@ -794,12 +794,30 @@
         <a href="#cfp">Call for Papers</a>
         <a href="#dates">Important Dates</a>
         <a href="#organizers">Organizers</a>
-        <a href="https://join.slack.com/t/agenticos-hq/shared_invite/zt-4fcvubco3-4rEHOh~~ISY2qPBggpWLTg" target="_blank" rel="noopener noreferrer">Slack Community</a>
+        <a href="#community" data-community-open>Community</a>
         <a href="mailto:suparna.bhattacharya@hpe.com">Contact</a>
       </div>
     </div>
     <p class="footer__copy">&copy; 2026 AgenticOS Workshop Organizers. Held in conjunction with NeurIPS 2026, Sydney.</p>
   </footer>
+
+  <!-- ===================== COMMUNITY POPUP ===================== -->
+  <dialog class="modal" id="community" aria-labelledby="community-title">
+    <div class="modal__card">
+      <button type="button" class="modal__close" aria-label="Close" data-community-close>&times;</button>
+      <p class="section__kicker">Community</p>
+      <h2 class="modal__title" id="community-title">Join the AgenticOS community</h2>
+      <p class="modal__text">
+        We are building an open community of ML and systems researchers around the OS layer for
+        agentic AI. Join the conversation, share ideas, and connect with organizers, speakers, and
+        fellow participants.
+      </p>
+      <div class="modal__actions">
+        <a class="btn btn--primary" href="https://join.slack.com/t/agenticos-hq/shared_invite/zt-4fcvubco3-4rEHOh~~ISY2qPBggpWLTg" target="_blank" rel="noopener noreferrer">Join us on Slack</a>
+        <button type="button" class="btn btn--outline" data-community-close>Maybe later</button>
+      </div>
+    </div>
+  </dialog>
 
   <script src="assets/js/main.js"></script>
 </body>
