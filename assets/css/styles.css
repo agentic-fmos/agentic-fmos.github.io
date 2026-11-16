@@ -75,12 +75,13 @@ a:hover { text-decoration: underline; }
   border-radius: 999px;
   letter-spacing: 0.02em;
 }
-.nav__links { display: flex; gap: 22px; }
+.nav__links { display: flex; gap: 18px; }
 .nav__links a {
   color: #cbd5e1;
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.15s ease;
 }
 .nav__links a:hover { color: #fff; }
@@ -507,7 +508,8 @@ a:hover { text-decoration: underline; }
 .speaker__affil { margin: 0 0 4px; color: var(--brand); font-weight: 600; font-size: 0.88rem; }
 .speaker__note { margin: 0 0 14px; color: var(--ink-soft); font-size: 0.86rem; }
 
-.speakers__group {
+.speakers__group,
+.papers__group {
   font-family: var(--font-head);
   font-size: 1.15rem;
   font-weight: 600;
@@ -700,6 +702,49 @@ a:hover { text-decoration: underline; }
   border-left: 4px solid var(--brand-2);
   background: linear-gradient(120deg, #ffffff, #f4f8ff);
 }
+
+/* ===================== ACCEPTED PAPERS ===================== */
+.papers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+.papers + .papers__group { margin-top: 48px; }
+.paper {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.paper--oral {
+  border-left: 4px solid #f97316;
+  background: linear-gradient(120deg, #ffffff, #fff7ed);
+}
+.paper__badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9a3412;
+  background: #ffedd5;
+  border: 1px solid #fed7aa;
+  border-radius: 999px;
+  padding: 2px 9px;
+  margin-bottom: 8px;
+}
+.paper__title {
+  margin: 0 0 4px;
+  font-family: var(--font-head);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.paper__authors { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
 
 /* ===================== ORGANIZERS ===================== */
 .organizers {
