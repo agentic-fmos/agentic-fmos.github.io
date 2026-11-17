@@ -861,6 +861,26 @@ a:hover { text-decoration: underline; }
 .pc__name { font-weight: 600; color: var(--ink); font-size: 0.97rem; }
 .pc__affil { color: var(--ink-mute); font-size: 0.85rem; }
 
+/* ===================== SPONSORS ===================== */
+.sponsors {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.sponsor {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 24px 36px;
+  box-shadow: var(--shadow-sm);
+}
+.sponsor a { display: block; }
+.sponsor img { display: block; height: 52px; width: auto; }
+
 /* ===================== FOOTER ===================== */
 .footer { background: var(--bg); color: #cbd5e1; padding: 54px 0 30px; }
 .footer__inner {
